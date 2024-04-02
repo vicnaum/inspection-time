@@ -157,3 +157,12 @@ p {
     height: 150px;
   }
 }
+
+@media (hover: none) and (pointer: coarse) {
+  .lineContainer > div,
+  .lineContainer > div:hover {
+    /* Reset or hide selection styles here */
+    background-color: transparent; /* Example: resetting background color */
+    border: none; /* Example: removing border */
+  }
+}
