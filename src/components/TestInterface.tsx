@@ -148,8 +148,8 @@ const TestInterface: React.FC<TestInterfaceProps> = ({
       </div>
       <p>Which T was longer?</p>
       <p>
-        Current Exposure Time: {exposureTimes[currentExposureIndex].toFixed(4)}{" "}
-        seconds
+        Current Exposure Time:{" "}
+        {(exposureTimes[currentExposureIndex] * 1000).toFixed()} ms
       </p>
       {/* <RenderDebugTable
         responseHistory={responseHistory}
